@@ -1,0 +1,14 @@
+public class Compte {
+	
+		String nom;
+	 	String prenom;
+	 	String mdp;
+	 	
+	 	public Compte(String prenom, String nom, String mdp) {
+	 		
+	 		this.prenom = prenom;
+	 		this.nom = nom;
+	 		this.mdp = mdp;
+	
+}
+}
