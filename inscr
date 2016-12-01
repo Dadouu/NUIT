@@ -1,0 +1,17 @@
+public class Inscription {
+		
+	Button ok = new Button ();
+	EditText name = new EditText ();
+	EditText prename = new EditText ();
+	
+	ok.setOnClickListener (new View.OnClickListener() {
+		
+		public void OnClick(View v) {
+		String nom = name.getText();
+		String prenom = prename.getText();
+		Compte compte = new Compte (prenom, nom);
+	
+		}
+	});
+	
+}
