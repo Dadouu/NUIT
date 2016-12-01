@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+
+
+
+public class Donnees {
+
+	ArrayList<Compte> listeCompte = new ArrayList<Compte>();
+	
+	public Donnees(){
+		
+		Compte c1 = new Compte ("Jean Michel", "Refugie" , "1");
+		Compte c2 = new Compte ("Francois" , "Le Syrien", "2");
+		Compte c3 = new Compte ("JeCapte ", "LaWifi" , "3");
+		
+		listeCompte.add(c1);
+		listeCompte.add(c2);
+		listeCompte.add(c3);
+	}
+	
+	Boolean VerifieCompte(String p, String n, String m){
+		for (int i = 0 ; i < listeCompte.size() ; i++){
+			if(listeCompte.get(i).nom == n && listeCompte.get(i).prenom == p && listeCompte.get(i).mdp == m){
+				return true;
+			}	
+		}
+		return false;
+		}
+	
+} 
