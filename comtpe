@@ -1,0 +1,12 @@
+public class Compte {
+	
+	String nom;
+	String prenom;
+	
+	public Compte(String prenom, String nom) {
+		
+		this.prenom = prenom;
+		this.nom = nom;
+		
+	}
+}
